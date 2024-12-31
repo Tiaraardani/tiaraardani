@@ -1,0 +1,408 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* /VARIABELS/ */
+:root {
+--primary-color: #FB6A27;
+--dark-color: #0F0F0F;
+--gray-color: gray;
+--blue-color: #0000FF;
+--gold-color: #FFD700;
+
+--h1-font-size: 40px;
+--h2-font-size: 32px;
+--small-font-size: 14px;
+}
+
+/* /RESET CSS/ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;   
+}
+
+.body{
+  background-image: url(https://wallpapercave.com/wp/wp2855649.jpg);
+}
+
+a {
+   text-decoration: none;
+}
+/* /GLOBAL CSS/ */
+section {
+    padding: 70px 0;
+}
+section .section-title {
+    font-size:var(--h2-font-size);
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.btn-orange {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
+
+.text-orange {
+    color:var(--primary-color);   
+}
+
+.text-dark {
+    color:var(--dark-color); 
+}
+
+.fs-7 {
+   font: var(--small-font-size); 
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+
+}
+/* /CSS PER SECTION/ */
+
+/* /NAVBAR/ */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active{
+    color:var(--primary-color)
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #4B79A1, #283E51); 
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important; 
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(90deg, #4B79A1, #283E51);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #FFD700;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+img.rounded-circle {
+    border: 4px solid #4B79A1; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+}
+h2 {
+    font-weight: bold;
+    color: #283E51;
+}
+
+.btn-primary {
+    background-color: #4B79A1;
+    border-color: #4B79A1;
+}
+
+/* Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Efek turun ke atas */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Gaya untuk Section Skills */
+  #skills h2 {
+    color: #071625; /* Warna biru untuk judul */
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #skills .col-md-4 {
+    background: hsl(184, 19%, 70%); /* Warna latar belakang */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 6px #5cc8d67c; /* Tambahkan bayangan */
+    margin-bottom: 20px;
+    padding: 20px;
+    animation: fadeIn 1.2s ease-in-out; /* Efek animasi */
+    animation-delay: 0.3s; /* Tambahkan delay */
+  }
+  
+  /* Efek Hover untuk Animasi */
+  #skills .col-md-4:hover {
+    transform: scale(1.05); /* Zoom in saat hover */
+    background: #e3f2fd; /* Warna latar belakang saat hover */
+    transition: all 0.3s ease-in-out; /* Transisi lembut */
+  }
+  
+  #skills h3 {
+    color: #2f8d99; /* Warna teks */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Teks kapital */
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  #skills p {
+    color: #16204e; /* Warna teks deskripsi */
+    font-size: 16px;
+    margin-bottom: 0;
+    animation: fadeIn 1.7s ease-in-out;
+  }
+
+/* Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Elemen bergerak dari bawah */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animasi Zoom-in */
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8); /* Elemen mulai lebih kecil */
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Gaya untuk Section pendidikan */
+  #pendidikan {
+    background: #f9f9f9; /* Warna latar belakang */
+    padding: 50px 0;
+  }
+  
+  #pendidikan h2 {
+    color: #333; /* Warna teks judul */
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #pendidikan .col-md-6 {
+    animation: fadeIn 1.5s ease-in-out; /* Setiap kolom gambar fade-in */
+    animation-delay: 0.2s; /* Delay untuk animasi */
+    margin-bottom: 20px;
+  }
+  
+  #pendidikan img {
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    animation: zoomIn 1s ease-in-out; /* Animasi zoom-in */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek lembut saat hover */
+  }
+  
+  /* Hover Effect untuk Sertifikat */
+  #pendidikan img:hover {
+    transform: scale(1.05); /* Zoom in saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+  }
+  
+  /* Section Styling */
+#projects {
+    padding: 60px 0;
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Hover Effect */
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Animation */
+  .project-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .card-title {
+    color: #007bff;
+  }
+  
+  /* Add Fade-In Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .project-card {
+    animation: fadeInUp 0.6s ease-in-out;
+  }
+/* Gaya untuk gambar proyek */
+.project-img {
+    width: 100%; /* Gambar memenuhi lebar kartu */
+    height: 200px; /* Tinggi tetap */
+    object-fit: cover; /* Memastikan gambar terpotong dengan proporsi yang baik */
+    border-top-left-radius: 10px; /* Menjaga border radius */
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect untuk gambar */
+  .project-card:hover .project-img {
+    transform: scale(1.05); /* Zoom in efek saat hover */
+  }
+
+  /* Animasi fade-in untuk elemen kontak */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Elemen muncul dari bawah */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animasi fade-in untuk elemen kontak */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Elemen muncul dari bawah */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bagian kontak */
+.contact-section {
+    background-color: #f9f9f9; /* Warna latar belakang */
+    padding: 60px 20px;
+    border-top: 5px solid #4CAF50; /* Garis dekoratif */
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-section p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Warna ikon */
+    margin-bottom: 15px;
+  }
+  
+  .contact-item h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .contact-item {
+      margin-bottom: 20px;
+    }
+  }
+  
